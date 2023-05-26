@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Component</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: hsla(218, 44%, 22%, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto auto;
+            min-height: 100vh;
+        }
+
+        .main {
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .qr-code {
+            width: 270px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 12px 16px 12px;
+        }
+
+        .subtitle {
+            color: grey;
+            font-size: 15px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400;
+            text-align: center;
+            margin: 0 12px 16px 12px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .main {
+                box-shadow: 8px 8px 8px gray;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img class="qr-code" src="images/image-qr-code.png">
+        <div class="title">Improve your front-end skills by building projects</div>
+        <div class="subtitle">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
+    </div>
+    
+</body>
+</html>
